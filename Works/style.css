@@ -1,0 +1,106 @@
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  background-image: url(../assets/images/slanted-gradient.svg);
+  background-size:cover;
+  background-color: gray;
+  font-family: Helvetica;
+}
+/*HEADER*/
+.header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row;
+  margin: auto;
+  border-bottom: 2px solid black;
+
+
+}
+.navbar{
+   position: fixed;
+   background-color: #EEEEEE;
+   margin-top: 15px;
+   display: flex;
+   justify-content: space-between !important;
+   flex-direction: row;
+   margin: auto;
+   border-bottom: 2px solid black;
+}
+.murgiagabriele{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.social {
+  margin-right: 27px;
+  display: flex;
+  flex-direction: row;
+}
+.workinprogress {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.workinprogress h1{
+  color: white;
+position: relative;
+z-index: 100px;
+}
+.reveal1 {
+  z-index: -1;
+}
+/*REVEAL EFFECT*/
+.reveal {
+  width: 50px;
+  height:50px;
+  background: rgba(76, 175, 80, 0.0);
+  border-radius: 3px;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0,0,0.3,1);
+}
+.reveal:hover {
+  transform:scale(1);
+}
+.reveal1 {
+  width: 100%;
+  background: rgba(76, 175, 80, 0.0);
+  border-radius: 3px;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0,0,0.3,1);
+}
+.reveal1:hover {
+  transform:scale(1);
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+.header{
+    border:1px solid blue;
+    background-color: red;
+    display: none;
+}
+.workinprogress {
+margin-top: 200px;
+}
+}
+@media only screen and (max-width: 400px) {
+  .header{
+      border:1px solid blue;
+      background-color: red;
+      display: none;
+  }
+  .workinprogress {
+  margin-top: 200px;
+  }
+}
+@media only screen and (min-width: 961px) {
+.navbar{
+  display: none !important;
+}
